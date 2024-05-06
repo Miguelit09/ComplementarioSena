@@ -23,7 +23,7 @@
     </section>
     <section>
       <h1>Deje su comentario</h1>
-      <form action="controlador" method="post">
+      <form action="controlador" method="post" enctype="multipart/form-data">
         <div>
           <input type="text" maxlength="40" minlength="10" required value="Miguel" placeholder="Aquí ponga su nombre" readonly>
         </div>
@@ -34,6 +34,18 @@
         </div>
         <div>
           <input type="email" placeholder="Aquí ponga su correo">
+        </div>
+        <div>
+          <input type="date">
+        </div>
+        <div>
+          <input type="time">
+        </div>
+        <div>
+          <input type="color">
+        </div>
+        <div>
+          <input type="file" accept=".pdf" multiple>
         </div>
         <div>
           <button type="submit">Enviar</button>
