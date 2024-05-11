@@ -1,0 +1,101 @@
+/* Selector universal */
+* {
+  /*Resetear estilos por defecto de HTML*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  /*Estilos generales*/
+}
+/* Selector de etiqueta */
+body {
+    font-size: 20px;
+    background-color: blanchedalmond;
+    color: rgb(74, 73, 73);
+}
+
+/* Selector de clase */
+.titulo {
+  color: rgb(247, 135, 55);
+  font-size: 44px;
+}
+
+/* Selector de etiqueta */
+#parrafo1 {
+  color: rgb(182, 65, 65);
+}
+
+a[href] {
+  color: rgb(253, 70, 70);
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Hijos de div*/
+div p {
+  color: blueviolet;
+}
+/*Elemento adyacente*/
+div+p,span {
+  color: rgb(40, 118, 92);
+}
+
+.caja {
+  background-color: rgb(168, 168, 240);
+  height: 90px;
+  width: 200px;
+  padding: 20px;
+  border: double 10px rgb(255, 190, 94);
+  /* 
+  Margenes individuales
+  margin-top: 12px;
+  margin-right: 3px;
+  margin-bottom: 6px;
+  margin-left: 9px; 
+  */
+  /* 
+  Margenes una sentencia, todos separados
+  margin: 12px 3px 6px 9px; 
+  */
+  /* 
+  Margenes en una sentencia, arriba-abajo y derecha-izquierda
+  margin: 12px 9px; 
+  */
+  /* 
+  Margenes en una sentencia, arriba, derecha-izquierda, y abajo.
+  margin: 12px 9px 2px;
+   */
+  margin: 15px;
+  /* 
+  Paddings individuales
+  padding-top: 12px;
+  padding-right: 3px;
+  padding-bottom: 6px;
+  padding-left: 9px; 
+  */
+  /* 
+  Paddings una sentencia, todos separados
+  padding: 12px 3px 6px 9px; 
+  */
+  /* 
+  Paddings en una sentencia, arriba-abajo y derecha-izquierda
+  padding: 12px 9px; 
+  */
+  /* 
+  Paddings en una sentencia, arriba, derecha-izquierda, y abajo.
+  padding: 12px 9px 2px;
+   */
+  padding: 15px;
+  display: block;
+}
+
+.herencia {
+  font-size: 24px;
+  color: steelblue;
+}
+
+.parrafo {
+  color: rgb(16, 251, 255);
+}
