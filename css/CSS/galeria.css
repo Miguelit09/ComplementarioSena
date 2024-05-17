@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poetsen+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f2f2f2;
+  font-family: "Poetsen One", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.linea_encabezado {
+  border-bottom: solid 1px red;
+}
+
+.titulo {
+  margin: 16px auto;
+}
+
+.card {
+  width: 300px;
+  padding: 0 0 30px;
+  margin: 30px;
+  border-radius: 5px;
+  text-align: center;
+  border: solid 1px #717171;
+  /* box-shadow: 5px 5px 5px black; */
+  display: inline-block;
+
+}
+
+.imagen {
+  width: 100%;
+  height: 280px;
+  /* object-fit: cover; */
+  display: block;
+}
+
+.contenedor {
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+
+}
+
+.card_titulo {
+  color: #a60909;
+  text-align: center;
+  margin: 20px 0px 10px;
+}
+
+.texto {
+  text-align: center;
+}
+
+.boton {
+  display: block;
+  text-align: center;
+  background: #a60909;
+  padding: 13px 0px;
+  color: #f2f2f2;
+  border-radius: 5px;
+  width: 150px;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.contenedor_gal {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #f2f2f2;
+  border-bottom: solid 1px red;
+}
+
+.contenedor_gal h1 {
+  color: #262525;
+}
+
+.contenedor_card {
+  max-width: 1200px;
+  display: inline-block;
+}
