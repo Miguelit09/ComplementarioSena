@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 20px;
+}
+
+.header {
+  padding: 45px 0;
+  color: rgb(100, 233, 100);
+  background: rgba(78, 14, 138, 0.575);
+  background: #1b95aad5;
+  background: hsl(180, 40%, 20%);
+  background: #582660;
+  /* background-image: linear-gradient(#dd2f2f, #8d8bcf 90%); */
+  /* background-image: url('../img/goku.png'); */
+
+}
+
+.title {
+  text-align: center;
+  font-size: 1rem;
+  display: block;
+  background-color: #dedede;
+}
