@@ -1,0 +1,60 @@
+* {
+  /*Resetear estilos por defecto de HTML*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  /*Estilos generales*/
+}
+
+body {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.box {
+  display: block;
+  background: steelblue;
+  width: 55px;
+  height: 55px;
+  margin: 15px 0;
+  margin-left: 5px;
+  text-align: center;
+  line-height: 55px;
+  color: white;
+  font-weight: bold;
+}
+
+.container{
+  margin-left: -15px;
+  padding: 10px 0;
+  border: solid 3px goldenrod;
+}
+
+
+/* El unico en su tipo  */
+/* .box:only-of-type{
+  background: tomato;
+} */
+
+
+/* Primero en su tipo */
+/* .box:first-of-type{
+  background: tomato;
+} */
+
+
+/* Ultimo en su tipo */
+/* .box:last-of-type{
+  background: tomato;
+} */
+
+.box:nth-of-type(2n +1){
+  background: tomato;
+} 
+
+/* 
+2*0= 0+1= 1
+2*1= 2+1= 3
+2*2= 4+1= 5
+2*3= 6+1= 7
+*/

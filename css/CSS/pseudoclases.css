@@ -1,0 +1,121 @@
+* {
+  /*Resetear estilos por defecto de HTML*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  /*Estilos generales*/
+}
+
+.enlace {
+  display: block;
+  background-color: tomato;
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  border-bottom: 3px solid gray;
+}
+
+/* PSEUDOCLASES DE ENLACES  */
+
+/* Pseudoclase que se aplica si este sitio ya ha sido visitado en el navegador anteriormente */
+.enlace:link { 
+  background-color: burlywood;
+  color: black;
+}
+
+/* Se aplica si el enlace se ha visitado desde la página */
+.enlace:visited {
+  background: crimson;
+}
+
+/* Se aplica al pasar el cursor sobre el elemento */
+.enlace:hover {
+  padding: 40px 20px;
+  color: white;
+}
+
+/* Se aplica cuando se está presionando el elemento */
+.enlace:active {
+  background: steelblue;
+  color: white;
+}
+
+/* --------------------------------------------------------------------------------- */
+
+/* PSEUDOCLASE TARGET */
+
+
+#objetivo {
+  margin: 20px auto;
+  width: 100px;
+  height: 100px;
+  background: steelblue;
+  transition: .3s;
+}
+
+#objetivo:target {
+  border-radius: 50%;
+  background: rgb(255, 223, 44);
+  box-shadow: 4px 4px 30px rgb(255, 200, 0);
+}
+
+/* --------------------------------------------------------------------------------- */
+
+/* PSEUDOCLASES DE FORMULARIOS */
+
+.form {
+  width: 80%;
+  margin: 30px auto;
+  background: rgb(212, 212, 212);
+  box-shadow: 0 0 5px rgba(0, 0, 0,0.5);
+  padding: 30px;
+}
+
+.form__title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input {
+  display: block;
+}
+
+input[type="text"], input[type="email"] {
+  width: 100%;
+  height: 40px;
+  margin: 10px;
+  padding-left: 10px;
+}
+
+input[type="checkbox"] {
+  display: inline-block;
+}
+
+input:focus {
+  background: rgba(237, 131, 131, 0.6);
+  color: white;
+  outline: none;
+}
+
+input[type="checkbox"]:checked + label {
+  color: rgb(53, 167, 15);
+}
+
+/* ----------------------------------------------------------------- */
+
+h3 {
+  font-size: 2rem;
+  font-weight: normal;
+  font-family: Arial;
+  text-align: center;
+  margin-top: 30px;
+}
+
+h3:not(.title):not(:hover){
+  color: crimson;
+  cursor: pointer;
+}
+
+h3:not(:hover){
+  text-decoration: line-through;
+}
