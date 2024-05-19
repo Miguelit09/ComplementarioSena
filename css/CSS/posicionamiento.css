@@ -1,0 +1,55 @@
+* {
+  /*Resetear estilos por defecto de HTML*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  /*Estilos generales*/
+}
+
+body{
+  font-family: Arial;
+  height: 300vh;
+}
+
+.container {
+  width: 450px;
+  height: 530px;
+  margin: 20px auto;
+  border: 5px solid steelblue;
+  position: fixed;
+}
+
+.box{
+  background: crimson;
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+  margin-left: 20px;
+  color: white;
+  text-align: center;
+  line-height: 100px;
+  font-weight: bold;
+}
+
+.static {
+  position: static;
+}
+
+.relative {
+  position: relative;
+  background: green;
+  bottom: 10px;
+  top: 10px;
+  /* left: 30px;
+  right: 90px; */
+}
+
+.absolute {
+  background: purple;
+  position: absolute;
+  /* top: 0; */
+  /* right: 0; */
+  margin: 0;
+  bottom: 0;
+  left: 0;
+}
