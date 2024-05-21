@@ -16,13 +16,21 @@ body {
   margin: 0 auto;
 }
 
-.linea_encabezado {
-  border-bottom: solid 1px red;
-}
+
 
 .titulo {
   margin: 16px auto;
 }
+
+.titulo::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: red;
+  margin: 5px 5px;
+}
+
 
 .card {
   width: 300px;
@@ -32,8 +40,32 @@ body {
   text-align: center;
   border: solid 1px #717171;
   /* box-shadow: 5px 5px 5px black; */
+  background: #e3e0e0;
   display: inline-block;
+  transition: 0.3s;
+}
 
+
+.card:nth-of-type(2n +1){
+  background: rgb(94, 90, 88);
+  color: #f6e9e9;
+}
+
+.card:nth-of-type(2n +1) .imagen{
+  filter: drop-shadow(1px -2px 5px #ddd1d1);
+}
+
+.card:hover {
+  background-color: rgb(242, 158, 40);
+}
+
+.card:hover img {
+  transform: scale(1.15);
+  transition: 0.3s;
+}
+
+.card:hover .boton {
+  background: #f2f2f2;
 }
 
 .imagen {
@@ -41,6 +73,7 @@ body {
   height: 280px;
   /* object-fit: cover; */
   display: block;
+  filter: drop-shadow(1px -2px 5px #282828);
 }
 
 .contenedor {
@@ -51,9 +84,15 @@ body {
 }
 
 .card_titulo {
-  color: #a60909;
+  color: #282525;
   text-align: center;
   margin: 20px 0px 10px;
+}
+
+
+
+.card_titulo::first-letter{
+  color: #ff0303;
 }
 
 .texto {
@@ -63,14 +102,15 @@ body {
 .boton {
   display: block;
   text-align: center;
-  background: #a60909;
+  background: rgb(242, 158, 40);
   padding: 13px 0px;
-  color: #f2f2f2;
+  color: #282828;
   border-radius: 5px;
   width: 150px;
   margin: 0 auto;
   margin-top: 20px;
   text-decoration: none;
+  transition: 0.3s;
 }
 
 .contenedor_gal {

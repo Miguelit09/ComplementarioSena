@@ -11,12 +11,27 @@ body{
   height: 300vh;
 }
 
+header {
+  background-color: blueviolet;
+  height: 80px;
+  width: 100%;
+  position: sticky;
+  color: #fff;
+  top:0;
+}
+
+header a{
+  color: #fff;
+  padding: 20px;
+}
+
 .container {
   width: 450px;
   height: 530px;
   margin: 20px auto;
   border: 5px solid steelblue;
-  position: fixed;
+  position: sticky;
+  top: 80px;
 }
 
 .box{
@@ -31,25 +46,39 @@ body{
   font-weight: bold;
 }
 
-.static {
+/*-------------------------------------------------------- STATIC*/
+
+/* Los static no toman top, bottom, left, right ni z-index */
+/*.static {
   position: static;
-}
+  left: 100px; -- No lo toma porque es estático
+}*/
 
-.relative {
+
+/*-------------------------------------------------------- RELATIVE*/
+/* Los relative se mueven en función de su ubicación original */
+/* .relative {
   position: relative;
-  background: green;
-  bottom: 10px;
-  top: 10px;
-  /* left: 30px;
-  right: 90px; */
-}
+  background: rgb(88, 235, 88);
+  left: 100px;
+  bottom: 120px
+} */
 
-.absolute {
+/*-------------------------------------------------------- ABSOLUTE*/
+/* Si su padre es static, se ubica de acuerdo a toma la pestaña del HTML. Si el padre es relative, se ubica dentro de su contenedor padre. */
+/* .absolute {
   background: purple;
   position: absolute;
-  /* top: 0; */
-  /* right: 0; */
-  margin: 0;
-  bottom: 0;
+  top: 0;
   left: 0;
+  margin: 0;
+} */
+
+/*-------------------------------------------------------- FIXED*/
+/* Se ubica de acuerdo al body */
+.fixed {
+  position: fixed;
+  background-color: rgb(162, 248, 248);
+  right: 0;
+  bottom: 0;
 }
