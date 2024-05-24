@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --gradient: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+  --color-uno: rgb(65,67,67);
+  --color-dos: rgb(107,104,106);
+  --box-shadow: 3px 3px 10px rgba(242, 7, 7, 0.716);
+}
+
+
+body {
+  font-family: "Arial", sans-serif;
+  min-height: 100vh;
+  background: var(--gradient);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background: rgb(240, 240, 240);
+  width: 300px;
+  margin: 30px auto;
+  padding: 30px 20px;
+  box-shadow: var(--box-shadow)
+}
+
+.card__titulo {
+  font-size: 2rem;
+  color: var(--color-uno);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.card__parrafo {
+  font-size: 1.2rem;
+  color: var(--color-dos);
+}
+
+.card__btn {
+  display: block;
+  width: 90px;
+  padding: 12px 20px;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 5px;
+  color: var(--color-uno);
+  text-decoration: none;
+  font-weight: bold;
+  background-image: var(--gradien, linear-gradient(to top, #feada6 0%, #f5efef 100%)); /*Color de respaldo el segundo.*/
+}
+
+
+
+.card_dos {
+  --color-uno: purple;
+  background: rgb(240, 240, 240);
+  width: 300px;
+  margin: 30px auto;
+  padding: 30px 20px;
+  box-shadow: var(--box-shadow)
+}
+
+.card_dos__titulo {
+  font-size: 2rem;
+  color: var(--color-uno);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.card_dos__parrafo {
+  font-size: 1.2rem;
+  color: var(--color-dos);
+}
+
+.card_dos__btn {
+  display: block;
+  width: 90px;
+  padding: 12px 20px;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 5px;
+  color: var(--color-uno);
+  text-decoration: none;
+  font-weight: bold;
+  background-image: var(--gradient);
+}
+
+
+
+/* .card {
+  width: 300px;
+  padding: 0 0 30px;
+  margin: 30px;
+  border-radius: 5px;
+  text-align: center;
+  border: solid 1px #717171;
+
+  background: var(--bg-pares);
+  display: inline-block;
+  transition: 0.3s;
+} */
+
+  /* box-shadow: 5px 5px 5px black; */
