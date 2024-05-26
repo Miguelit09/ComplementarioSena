@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --gradient-one: linear-gradient(120deg, #d5fc79 0%, #96e6a1 100%);
+  --gradient-two: linear-gradient(to right, #ffecd234 0%, #fcb69f84 100%);
+  --url-img: url("../img/galaxia.jpg");
+  --box-shadow: 6px 6px 10px rgba(0,0,0,0.2);
+  --width: 100%;
+  --radius: 8px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  background-image: var(--gradient-two), var(--url-img);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.card {
+  width: 400px;
+  background: rgba(112, 207, 255, 0.513);
+  margin: 70px auto;
+  padding: 30px 20px 40px;
+  text-align: center;
+  border-radius: var(--radius);
+  box-shadow: var(--box-shadow);
+}
+
+.card__title--red {
+  color: rgb(218, 70, 70);
+  text-decoration: underline;
+}
+
+.input {
+  width: var(--width);
+  padding: 20px 5px;
+  display: block;
+  margin-bottom: 20px;
+  border: 1px solid #675c5c;
+  outline: none; /*Le quita el resaltado del borde al estar focuseado*/
+  border-radius: var(--radius);
+}
+
+.input--red {
+  background: #f49393;
+}
+
+.input--green {
+  background: #e9ffb6;
+}
+
+.input--yellow {
+  background: #f4e96d;
+}
+
+.input--border-bottom {
+  border: none;
+  border-bottom: 3px solid #222421;
+}
+
+
+
+
+.card__title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.card__message {
+  max-width: var(--width);
+  min-width: var(--width);
+  min-height: 150px;
+  max-height: 150px;
+}
+
+.button {
+  width: var(--width);
+  font-size: 18px;
+  background: var(--gradient-one);
+  padding: 15px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: var(--radius);
+  transition: 0.5s;
+}
+
+.button--submit {
+  background: #ffca61;
+  
+}
+
+.button--border-top {
+  border: none;
+  border-top: 3px solid #222421;
+}
+
+.button:hover {
+  background: #fdb82c;
+  color: #f2f2f2;
+}
+
+@media screen and (MAX-WIDTH:780px){ /*De 780 pixeles para abajo*/
+  body {
+    padding: 60px 0;
+  }
+  .card {
+    margin: 0px auto;
+  }
+}
+
+@media screen and (MAX-WIDTH:425px){
+  body {
+    padding:40px 0;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .card__title {
+    color: #96e6a1;
+    font-size: 1.5rem;
+  }
+
+  .button {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,12 @@
+.title {
+  margin: 16px auto;
+}
+
+.title::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: red;
+  margin: 5px 5px;
+}

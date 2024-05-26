@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poetsen+One&display=swap');
+
+:root {
+  --bg-gradient: linear-gradient(to top, #accbee01 0%, #e7f0fd 100%);
+  --bg-img-url: url("img/galaxia.jpg");
+  --color-one: rgb(243, 81, 81);
+  --button-radius: 12px;
+  --button-width: 140px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgba(177, 205, 230);
+  font-family: "Poetsen One", sans-serif;
+  min-height: 200vh;
+}
+
+.hero {
+  height: 100vh;
+  background-image: var(--bg-gradient), var(--bg-img-url);
+  background-position: center;
+  background-size: cover;
+  padding-top: .1px;
+  position: relative;
+}
+
+.container-text {
+  text-align: center;
+  margin-top: 150px;
+  color: var(--color-one);
+}
+
+.hero__title {
+  font-size: 4rem;
+  font-weight: bolder;
+}
+
+.hero__copy {
+  font-size: 2rem;
+  margin: 32px auto;
+  font-weight: normal;
+}
+
+.hero__cta {
+  display: inline-block;
+  width: var(--button-width);
+  background: white;
+  text-decoration: none;
+  color: var(--color-one);
+  padding: 15px 20px;
+  border-radius: var(--button-radius);
+  font-weight: bold;
+}
+
+.hero__wave {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+@media (MAX-WIDTH:840px){ 
+  .hero__title {
+    font-size: 3rem;
+
+  }
+  .hero__copy {
+    font-size: 1.5rem;
+
+
+  }
+}
+
+
+
+@media (MAX-WIDTH:490px){ 
+  .hero__title {
+    font-size: 1.5rem;
+
+  }
+  .hero__copy {
+    font-size: 1rem;
+
+
+  }
+}
+

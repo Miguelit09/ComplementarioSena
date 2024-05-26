@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poetsen+One&display=swap');
 @import url(root.css);
+@import url(galery_components/title.css);
+@import url(galery_components/card.css);
+@import url(galery_components/button.css);
+@import url(galery_components/responsive.css);
 
 
 * {
@@ -7,6 +11,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 
 body {
   background: #f2f2f2;
@@ -20,119 +25,4 @@ body {
 
 
 
-.titulo {
-  margin: 16px auto;
-}
 
-.titulo::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 4px;
-  background: red;
-  margin: 5px 5px;
-}
-
-
-.card {
-  width: 300px;
-  padding: 0 0 30px;
-  margin: 30px;
-  border-radius: 5px;
-  text-align: center;
-  border: solid 1px #717171;
-  /* box-shadow: 5px 5px 5px black; */
-  background: var(--bg-pares);
-  display: inline-block;
-  transition: 0.3s;
-}
-
-
-.card:nth-of-type(2n +1){
-  background: var(--bg-impares);
-  color: #f6e9e9;
-}
-
-.card:nth-of-type(2n +1) .imagen{
-  filter: drop-shadow(1px -2px 5px #ddd1d1);
-}
-
-.card:hover {
-  background-color: rgb(242, 158, 40);
-}
-
-.card:hover img {
-  transform: scale(1.15);
-  transition: 0.3s;
-}
-
-.card:hover .boton {
-  background: #f2f2f2;
-}
-
-.imagen {
-  width: 100%;
-  height: 280px;
-  /* object-fit: cover; */
-  display: block;
-  filter: drop-shadow(1px -2px 5px #282828);
-}
-
-.contenedor {
-  width: 90%;
-  margin: 0 auto;
-  overflow: hidden;
-
-}
-
-.card_titulo {
-  color: #282525;
-  text-align: center;
-  margin: 20px 0px 10px;
-}
-
-
-
-.card_titulo::first-letter{
-  color: #ff0303;
-}
-
-.texto {
-  text-align: center;
-}
-
-.boton {
-  display: block;
-  text-align: center;
-  background: rgb(242, 158, 40);
-  padding: 13px 0px;
-  color: #282828;
-  border-radius: 5px;
-  width: 150px;
-  margin: 0 auto;
-  margin-top: 20px;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.contenedor_gal {
-  max-width: 1200px;
-  margin: 0 auto;
-  background: #f2f2f2;
-  border-bottom: solid 1px red;
-}
-
-.contenedor_gal h1 {
-  color: #262525;
-}
-
-.contenedor_card {
-  max-width: 1200px;
-  display: inline-block;
-}
-
-@media (MIN-WIDTH:900px){ /*De 900 pixeles para arriba*/
-  .card {
-    background-color: #ff0303;
-  }
-}
