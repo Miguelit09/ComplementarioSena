@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(120deg, #f6d46589 0%, #fd9f85a3 100%), url('../img/galaxia.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 400px;
+  height: 400px;
+  background: rgba(96, 202, 255, 0.772);
+  padding: 30px 20px 40px;
+  text-align: center;
+  border-radius: var(--radius);
+  box-shadow: var(--box-shadow);
+}
+
+
+
+
+
+
+@media screen and (MAX-WIDTH:780px){ /*De 780 pixeles para abajo*/
+  body {
+    padding: 60px 0;
+  }
+  .card {
+    margin: 0px auto;
+  }
+}
+
+@media screen and (MAX-WIDTH:425px){
+  body {
+    padding:40px 0;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .card__title {
+    color: #96e6a1;
+    font-size: 1.5rem;
+  }
+
+  .button {
+    font-size: 14px;
+  }
+}

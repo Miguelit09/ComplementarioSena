@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: #333;
+  height: 600px;
+  width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+
+  /* Para que la caja sea flex */
+  display: inline-flex;
+  display: flex;
+
+  /* Flex direction -- Flujo del contenedor flexible*/
+  flex-direction: column;
+  flex-direction: column-reverse;
+  flex-direction: row-reverse;
+  flex-direction: row; /*Por defecto*/
+
+  /*Flex wrap -- Envoltura*/
+  flex-wrap: nowrap; /*Por defecto*/
+  flex-wrap: wrap; 
+
+  /*Shorthand para flex direction y flex wrap*/
+  flex-flow: row nowrap;
+
+  /*Justify content -- Alinear en el eje principal*/
+  justify-content: flex-end;
+  justify-content: center;
+  justify-content: flex-start; /*Por defecto*/
+
+  /*Align items -- Alinear en el eje transversal*/
+  align-items: stretch; /*Por defecto*/ /*Toma todo el contenido en auto*/
+  align-items: flex-start; /*Queda pegado al inicio*/
+  align-items: flex-end; /*Queda pegado al final*/
+  align-items: center; /*Lo centra*/
+  
+  /*Align content*/
+
+  align-content: flex-start;
+  align-content: space-evenly;
+  align-content: space-between;
+}
+
+.item {
+  border: medium solid #999;
+  background-color: #666;
+  width: 300px;
+  height: 200px;
+  /* flex-grow: 1; */
+  /* flex-shrink: 1; */
+}
+
+.item:nth-of-type(1){
+  background: red;
+  /* flex-grow: 1; */
+  /* flex-shrink: 1; */
+  flex-basis: auto;
+  order: 1;
+  align-self: stretch;
+} 
+.item:nth-of-type(2){
+  background: green;
+  /* flex-grow: 3; */
+  /* flex-shrink: 3; */
+  flex-basis: 200px;
+  order: 1;
+} 
+.item:nth-of-type(3){
+  background: blue;
+  /* flex-grow: 2; */
+  /* flex-shrink: 2; */
+  flex-basis: 100px;
+  /*Flex es el shorthand(flex-grow flex-shrink flex-basis)*/
+  flex: 0 0 150px; /*Factor de crecimiento y disminución por defecto es 0*/
+   order: -1;
+} 
