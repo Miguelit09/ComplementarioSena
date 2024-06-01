@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+  --first-color: #F3DB3C;
+  --second-color: #FBFBFB;
+  --third-color: #2D2D2A;
+  --fourth-color: #827D30;
+  --white: white;
+  --black: black;
+  --grey: rgb(201, 192, 192);
+  --nav-height: 70px;
+  --box-shadow: 0 0 4px -1px rgba(0,0,0, 0.5);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  background: var(--white);
+}
+
+section {
+  height: 100vh;
+}
+
+nav {
+  height: var(--nav-height);
+  background: var(--first-color);
+}
+
+
+
+.contenedor {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  height: 100vh; 
+}
+
+.menu {
+  align-items: center;
+  justify-content: space-between;
+  height: var(--nav-height);
+  background: var(--first-color);
+  border-radius: 0 0 6px 6px;
+  box-shadow: var(--box-shadow);
+}
+
+.logo {
+  margin-left: 20px;
+  color: var(--black);
+  font-size: 1.4rem;
+  font-weight: 700px;
+}
+
+.nav {
+  display: flex;
+}
+
+.enlace {
+  color: var(--third-color);
+  display: inline-block;
+  line-height: var(--nav-height);
+  padding: 0px 14px;
+  font-size: 1.2rem;
+  height: 100%;
+  align-items: center;
+  transition: 1s;
+  font-weight: 700;
+}
+
+.enlace:hover {
+  color: var(--second-color);
+  background: var(--third-color);
+}
+
+.principal {
+  height: calc(100vh - var(--nav-height));
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contenedor-textos {
+  flex-basis: 45%;
+}
+
+.titulo {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+h1.titulo span{
+  color: var(--first-color);
+}
+
+.copy {
+  margin: 20px 0;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+.cta {
+  display: inline-block;
+  background: var(--third-color);
+  color: var(--second-color);
+  padding: 16px 30px;
+  border-radius: 30px;
+}
+
+.ilustracion {
+  flex-basis: 50%;
+}
+
+.img {
+  max-width: 800px;
+}
+
+.nosotros-descripcion {
+  order: 2;
+  align-self: center;
+}
+
+.nosotros-imagenes {
+  order: 1;
+  align-self: center;
+}
+
+.bg {
+  background: var(--grey);
+}
+
+.parrafo {
+  margin: 16px 0;
+  font-weight: 300;
+}
+
+.parrafo:last-of-type {
+  margin-bottom: 30px;
+}
