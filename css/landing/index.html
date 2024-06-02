@@ -33,7 +33,7 @@
     </section>
 
     <!-- Sección Nosotros  -->
-    <section id="nosotros" class="bg seccion">
+    <section id="nosotros" class="bg">
       <article class="contenedor nosotros">
         <div class="nosotros-descripcion">
           <h1 class="titulo">Acerca de <span>Nosotros</span></h1>
@@ -47,14 +47,44 @@
       </article>
     </section>
     <section id="contacto">
-      <div>
-        <h2>Contáctanos</h2>
-        <p>¡Nos comunicaremos contigo lo más pronto posible!</p>
-        <form action="">
-          
+      <article class="contenedor contacto">
+        <h2 class="subtitulo">Contáctanos</h2>
+        <p class="copy">¡Nos comunicaremos contigo lo más pronto posible!</p>
+        <form action="" class="form">
+          <div class="formulario-contacto">
+            <div class="bloques">
+              <!-- Cajas de texto -->
+              <div class="cajas">
+                <label for="nombre">Ingrese su nombre</label>
+                <input type="text" id="nombre">
+              </div>
+              <div class="cajas">
+                <label for="email">Ingrese su email</label>
+                <input type="email" id="email">
+              </div>
+              <div class="cajas">
+                <label for="telefono">Ingrese su teléfono</label>
+                <input type="tel" id="telefono">
+              </div>
+              <div class="cajas cajas-datos">
+                <label for="datos">Acepto el tratamiento de mis datos</label>
+                <input type="checkbox" id="datos">
+              </div>
+            </div>
+            <!-- Fin cajas de texto  -->
+            <!-- Mensaje  -->
+            <div class="bloques">
+              <div>
+                <label for="mensaje">Ingrese su mensaje</label>
+                <textarea id="mensaje"></textarea>
+              </div>
+            </div>
+            <!-- Fin mensaje  -->
+            <!-- <button type="submit">Enviar</button> -->
+          </div>
+          <button class="submit">Enviar</button>
         </form>
-      </div>
-      
+      </article>
     </section>
   </main>
 </body>

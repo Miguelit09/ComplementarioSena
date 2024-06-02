@@ -10,6 +10,7 @@
   --grey: rgb(201, 192, 192);
   --nav-height: 70px;
   --box-shadow: 0 0 4px -1px rgba(0,0,0, 0.5);
+  --border: solid 1px #f2f2f2;
 }
 
 * {
@@ -102,6 +103,7 @@ h1.titulo span{
   color: var(--first-color);
 }
 
+
 .copy {
   margin: 20px 0;
   font-weight: 500;
@@ -145,4 +147,87 @@ h1.titulo span{
 
 .parrafo:last-of-type {
   margin-bottom: 30px;
+}
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.subtitulo {
+  color: var(--first-color);
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  border: var(--border);
+}
+
+.formulario-contacto {
+  display: flex;
+  width: 750px;
+  gap: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: var(--border);
+  outline: none;
+}
+
+textarea {
+  resize: none;
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 196px;
+  min-height: 196px;
+  outline: none;
+  border: var(--border);
+  padding: 8px;
+  gap: 10px;
+}
+
+.bloques {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 10px;
+}
+
+.cajas {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cajas-datos {
+  flex-direction: row;
+}
+
+input[type="checkbox"]{
+  width: 20px;
+}
+
+.submit {
+  background: var(--grey);
+  color: var(--black);
+  border: var(--border);
+  outline: none;
+  padding: 8px 30px;
+  margin-top: 8px;
+  border-radius: 30px;
+  font-size: 16px;
+  width: 30%;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background: var(--third-color);
+  color: var(--first-color);
 }
