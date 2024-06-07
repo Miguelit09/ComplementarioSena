@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basico</title>
+</head>
+
+<body>
+  <script>
+    var curso = "html, css y js";
+    let personas = "estudiando";
+    console.log(window)
+    {
+      var curso = "Javascript";
+      // let personas = "validando el ámbito de bloque";
+      console.log("dentro del bloque", curso)
+      console.log("dentro del bloque:", personas)
+    }
+    console.log("Fuera del bloque:", curso)
+    console.log("Fuera del bloque:", personas)
+    console.clear()
+
+    let a;
+    a = "estudiando"
+    console.log(a)
+    const PI = 3.1416;
+
+    // PI = 3.1516;
+
+    let john = "Jhon Becerra";
+    
+    let edad = 38;
+    edad = "No tengo edad"
+
+    const persona = {
+      nombre: 'Miguel Pasachoa',
+      edad: 19,
+      gustos: ["Estudiar, jugar, d"]
+    }
+
+    
+    persona.sexo = "Masculino"
+
+    persona.nombre = "Angel"
+    
+    console.log(persona)
+    
+    const dias = ["lunes", "martes", "miércoles"]
+    
+    console.log(dias)
+    
+    dias.push('jueves')
+    dias.push('viernes')
+    dias.push('sabados')
+    dias.push('Domingos')
+    
+    console.log(dias)
+
+    console.clear()
+
+    let palabra = "Lorem john dolor sit amet, consectetur adipisicing elit. Rem corporis ipsam similique commodi neque cupiditate libero eum soluta sapiente doloribus temporibus, quos nihil quam, corrupti quo? Quas, pariatur ipsa? Possimus!"
+
+    let otraCadena  = "yo-no-sé-nada"
+
+    console.log(palabra.length) // Extensión
+
+    console.log(palabra.toUpperCase()) //Mayúsculas
+    
+    console.log(palabra.toLowerCase()) // Minúsculas
+
+    console.log(palabra.includes("john")) // Incluye
+
+    console.log(palabra.split(" ")) // Dividirlo en un array
+
+    console.log(otraCadena.split("-").length)
+
+    console.clear()
+
+    let nombre = "miguel"
+    let apellido = "pasachoa"
+
+    // console.log("El nombre de la persona es " + nombre + " y su apellido es " + apellido)
+
+    //Template string
+
+    console.log(`El nombre es: ${nombre} y su apellido es: ${apellido}`)
+
+    let ul = "<ul><li>Palabra 1<li><li>Palabra 2<li><li>Palabra 3<li><ul>"
+
+    console.log(ul)
+
+    let ol = `<ol>
+                <li>Palabra1<li>
+                <li>Palabra2<li>
+                <li>Palabra3<li>
+                <li>Palabra4<li>
+                <li>Palabra5<li>
+              <ol>`
+
+    console.log(ol)
+
+    console.clear()
+
+    let $a = 2;
+    let $b = new Number(1);
+    let $c = 7.19;
+    let $d = "5.6"
+
+    console.log($a, $b)
+
+    console.log($c.toFixed(1))
+    console.log(parseInt($c))
+
+    console.log(parseFloat($d))
+
+    console.log(parseInt(a))
+
+    console.log(typeof $d, typeof $a, typeof $b)
+
+    console.clear()
+
+    let falso = false
+    let verdadero = true
+
+    let v = Boolean(true)
+    let f = Boolean(false)
+    let c = Boolean(2)
+
+    console.log(falso, verdadero, v, f, c)
+    console.log(Boolean(-7))
+    console.log(Boolean(""))
+    console.log(Boolean(1))
+
+    console.log(typeof verdadero)
+
+  </script>
+</body>
+
+</html>
