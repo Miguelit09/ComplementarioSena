@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Errores</title>
+</head>
+<body>
+  <script>
+    // try {
+    //   console.log("Código que se evalúa")
+    // } catch (error) {
+    //   console.log("Cuando ocurre un error")
+    // }finally {
+    //   console.log("Bloque que siempre se ejecuta")
+    // }
+
+    // try {
+    //   let numero = 9;
+    //   if (isNaN(numero)) {
+    //     console.log("Mensaje que le mostraremos al usuario")
+    //   }
+    //   console.log(numero * numero)
+    // } catch (error) {
+      
+    // }
+
+    try {
+      let numero = "numero"
+      if(!isNaN(numero)){
+        console.log(numero*8)
+      }else {
+        throw new Error("Mensaje que le mostraremos al usuario")
+      }
+    } catch (error) {
+      console.error(`Se produjo el isguiente error: ${error}`)
+    }
+  </script>
+</body>
+</html>

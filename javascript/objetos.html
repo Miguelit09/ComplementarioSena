@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objetos</title>
+</head>
+<body>
+  <script>
+
+    const persona = {
+      nombre: "Miguel",
+      apellido: "Pasachoa",
+      gustos: ["Música", "Juegos", "Dormir"],
+      saludar: function (){
+        console.log(`
+        Hola mi nombre es: 
+        ${this.nombre} ${this.apellido}
+        Y mis gustos son: 
+        Gusto 1: ${this.gustos[0]}
+        Gusto 2: ${this.gustos[1]} 
+        Gusto 3: ${this.gustos[2]}`)
+      }
+    }
+
+      persona.saludar()
+
+      console.log(Object.keys(persona)) // Obtener llaves del objeto
+      console.log(Object.values(persona)) // Obtener values del objeto
+      console.log(persona.hasOwnProperty("nombre")) // Verificar si el objeto tiene una propiedad (Devuelve true o false)
+      console.log(persona.hasOwnProperty("edad"))
+      persona.edad = 19
+      console.log(persona.hasOwnProperty("edad"))
+
+
+
+
+
+    // const objeto = new Object()
+
+    // objeto.nombre = "Miguel"
+    // objeto.apellido = "Pasachoa"
+    // objeto.saludar = function () {
+    //   console.log(`Mi nombre es: ${this.nombre} ${this.apellido}`)
+    // }
+    
+    // console.log(objeto)
+    // objeto.saludar();
+  </script>
+  
+</body>
+</html>
