@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temporizadores</title>
+</head>
+<body>
+  <script>
+    let primera = setTimeout(() => { // Se ejecuta solo una vez cuando se cumpla el tiempo
+      console.log('Hola muchachos')
+      clearInterval(segunda)
+    }, 60000);
+
+    let segunda = setInterval(() => { // Se ejecuta infinitamente hasta que se aplique le clearInterval
+      console.log("Hola mano")
+    }, 1000);
+
+    console.log(primera, segunda)
+  </script>
+</body>
+</html>
