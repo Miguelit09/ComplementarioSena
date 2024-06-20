@@ -6,14 +6,22 @@ let id = parseInt(prompt("Ingrese el ID"));
 console.log(getUserById(id, function (error, user) {
   try {
     if (!error) {
-      // console.log(`Usuario encontrado: ${user.nombre} con el ID ${user.id}, asignaciones ${user.asignaciones}`)
-      getAsignacionesIds(user.asignaciones, function (error, asignacionesNombres) {
-        
-      })
+      if (user.instructor){
+        console.log(`${user.nombre} es instructor y no tiene asignaciones.`);
+      } else {
+        getAsignacionesIds(user.asignaciones, user.instructor, function (error, asignacionesNombres) {
+          if (!error) {
+            console.log(`Asignaciones de ${user.nombre}:`);
+            asignacionesNombres.forEach(asignacion => {
+              console.log(asignacion.nombre);
+            });
+          }
+        });
+      }
     } else {
-      throw new Error(`Usuario no encontrado para el ID: ${id}`)
+      throw new Error(`Usuario no encontrado para el ID: ${id}`);
     }
   } catch (error) {
-    console.error(`${error}`)
+    console.error(`${error}`);
   }
-}))
+}));

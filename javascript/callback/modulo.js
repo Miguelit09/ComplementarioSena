@@ -11,9 +11,11 @@ export function getUserById(id, callback) {
   return callback(null, user)
 }
 
-export function getAsignacionesIds(ids, callback) {
-  console.log(ids)
-  const respuesta = asignaciones.filter((x, indice, ids) => {
-    console.log(x, indice, ids)
-  })
+export function getAsignacionesIds(ids, instructor, callback) {
+  const asignacionesUsuario = asignaciones.filter(asignacion => ids.includes(asignacion.id));
+  if (instructor) {
+    callback(null, []);
+  } else {
+    callback(null, asignacionesUsuario);
+  }
 }
