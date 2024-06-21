@@ -3,13 +3,13 @@ import { getAsignacionesIds, getUserById } from "./modulo.js";
 
 let id = parseInt(prompt("Ingrese el ID"));
 
-console.log(getUserById(id, function (error, user) {
+getUserById(id, function (error, user) {
   try {
     if (!error) {
       if (user.instructor){
         console.log(`${user.nombre} es instructor y no tiene asignaciones.`);
       } else {
-        getAsignacionesIds(user.asignaciones, user.instructor, function (error, asignacionesNombres) {
+        getAsignacionesIds(user.asignaciones, function (error, asignacionesNombres) {
           if (!error) {
             console.log(`Asignaciones de ${user.nombre}:`);
             asignacionesNombres.forEach(asignacion => {
@@ -24,4 +24,6 @@ console.log(getUserById(id, function (error, user) {
   } catch (error) {
     console.error(`${error}`);
   }
-}));
+});
+
+

@@ -11,11 +11,8 @@ export function getUserById(id, callback) {
   return callback(null, user)
 }
 
-export function getAsignacionesIds(ids, instructor, callback) {
+export function getAsignacionesIds(ids, callback) {
   const asignacionesUsuario = asignaciones.filter(asignacion => ids.includes(asignacion.id));
-  if (instructor) {
-    callback(null, []);
-  } else {
-    callback(null, asignacionesUsuario);
-  }
+  callback(null, asignacionesUsuario);
 }
+
