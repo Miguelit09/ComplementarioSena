@@ -4,11 +4,7 @@ export const users = [
     nombre: "Miguel Pasachoa",
     instructor: false,
     asignaciones: [
-      1,
-      2,
-      3,
-      4,
-      5,
+
     ],
     productiva: true,
   },
