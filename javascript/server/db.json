@@ -1,0 +1,84 @@
+{
+    "usuarios": [
+        {
+            "id": 1,
+            "nombre": "Miguel Pasachoa",
+            "instructor": false,
+            "asignaciones": [1,2,3],
+            "productiva": true
+        },
+        {
+            "id": 2,
+            "nombre": "Jhon Becerra",
+            "instructor": true
+        },
+        {
+            "id": 3,
+            "nombre": "Claudia López",
+            "instructor": false,
+            "asignaciones": [
+                2,
+                3,
+                4,
+                6,
+                9
+            ]
+        },
+        {
+            "id": 4,
+            "nombre": "Donkand",
+            "instructor": false,
+            "asignaciones": [
+                1,
+                2,
+                4,
+                7,
+                9
+            ]
+        },
+        {
+            "id": 5,
+            "nombre": "Rafael",
+            "instructor": false,
+            "asignaciones": []
+        }
+    ],
+    "asignaciones": [
+        {
+            "id": 1,
+            "nombre": "Requerimientos"
+        },
+        {
+            "id": 2,
+            "nombre": "SQL"
+        },
+        {
+            "id": 3,
+            "nombre": "lógica"
+        },
+        {
+            "id": 4,
+            "nombre": "base de datos"
+        },
+        {
+            "id": 5,
+            "nombre": "poo"
+        },
+        {
+            "id": 6,
+            "nombre": "tic"
+        },
+        {
+            "id": 7,
+            "nombre": "deportes"
+        },
+        {
+            "id": 8,
+            "nombre": "JavaScript"
+        },
+        {
+            "id": 9,
+            "nombre": "CSS"
+        }
+    ]
+}
