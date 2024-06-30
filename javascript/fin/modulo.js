@@ -11,9 +11,28 @@ const fetchAsignacion = async (id) => {
 };
 
 export const asignaciones = (ids, callback) => {
+
+
     const promises = ids.map(fetchAsignacion);
 
-    Promise.all(promises)
+    Promise.allSettled(promises) // Promise.all = Si una falla, todas fallan. // Promise.allSettled = Devuelve el valor de cada una de las promesas.
         .then(results => callback(null, results))
         .catch(error => callback(error, null));
 };
+
+export const crearUsuario = async () => {
+  const response = await fetch(`http://127.0.0.1:3000/usuarios`, {
+    method: 'POST',
+    body: JSON.stringify({
+      id: 6,
+      nombre: 'German',
+      instructor: false,
+      asignaciones: [
+        3,5,6
+      ]
+    }),
+    headers: {
+      'Content-type': 'application/json; charset=UTF-8',
+    }
+  })
+}
